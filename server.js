@@ -17,7 +17,7 @@ server.use(middleware.logger);
 
 //добавялем вкладку
 server.get('/about', middleware.requireAuthentication, function (req, res) {
-	res.send('We are your friends!<br /><a href="index.html"><p>back</p></a>');
+	res.send('About us!<br /><a href="index.html"><p>back</p></a>');
 });
 
 //доступ к общей папке, в ней лежит index.html
